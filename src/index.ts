@@ -222,7 +222,7 @@ export class ResponseCookies {
     this.#secret = options?.secret;
 
     if (headers) {
-      let setCookies: string[] = [];
+      let setCookies: string[];
       if (typeof headers.getSetCookie === 'function') {
         setCookies = headers.getSetCookie();
       } else {
