@@ -1,0 +1,68 @@
+{
+  "name": "@se-oss/cookies",
+  "version": "0.0.0",
+  "description": "A lightweight, secure cookie manager for JavaScript and TypeScript with signing, AES-GCM encryption, transparent chunking, and RFC 6265bis prefix validation.",
+  "keywords": [
+    "cookies",
+    "cookie",
+    "cookie-parser",
+    "cookie-serializer",
+    "hmac",
+    "aes-gcm",
+    "secure-cookies",
+    "signing",
+    "encryption",
+    "chunking",
+    "rfc6265",
+    "typescript",
+    "node",
+    "browser",
+    "web-crypto"
+  ],
+  "homepage": "https://github.com/shahradelahi/ts-cookies",
+  "repository": "github:shahradelahi/ts-cookies",
+  "license": "MIT",
+  "author": "Shahrad Elahi <shahrad@litehex.com> (https://github.com/shahradelahi)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "!**/*.d.cts"
+  ],
+  "scripts": {
+    "bench": "vitest bench --run",
+    "build": "pnpm typecheck && tsup",
+    "clean": "git clean -dfx \"**/node_modules/**\" dist .tsbuildinfo",
+    "dev": "tsup --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "pnpm typecheck && eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepublishOnly": "pnpm build && pnpm lint && pnpm format:check && pnpm test",
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@shahrad/prettier-config",
+  "devDependencies": {
+    "@edge-runtime/vm": "^5.0.0",
+    "@shahrad/eslint-config": "^1.0.1",
+    "@shahrad/prettier-config": "^1.2.2",
+    "@shahrad/tsconfig": "^1.2.0",
+    "@types/node": "^25.3.0",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
+}

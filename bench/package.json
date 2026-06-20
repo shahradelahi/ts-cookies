@@ -1,0 +1,18 @@
+{
+  "name": "benchmarks",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "vitest bench --run"
+  },
+  "devDependencies": {
+    "@edge-runtime/cookies": "^6.0.0",
+    "@se-oss/cookies": "link:..",
+    "@shahrad/tsconfig": "^1.2.0",
+    "@types/mustache": "^4.2.6",
+    "cookie": "^1.1.1",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
+}
