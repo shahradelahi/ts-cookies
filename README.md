@@ -1,5 +1,5 @@
 <h1 align="center">
-  <sup>ts-cookies</sup>
+  <sup>@se-oss/cookies</sup>
   <br>
   <a href="https://github.com/shahradelahi/ts-cookies/actions/workflows/ci.yml"><img src="https://github.com/shahradelahi/ts-cookies/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="CI"></a>
   <a href="https://www.npmjs.com/package/@se-oss/cookies"><img src="https://img.shields.io/npm/v/@se-oss/cookies.svg" alt="NPM Version"></a>
@@ -8,7 +8,7 @@
   <a href="https://packagephobia.com/result?p=@se-oss/cookies"><img src="https://img.shields.io/packagephobia/badge?p=@se-oss/cookies" alt="Install Size"></a>
 </h1>
 
-_ts-cookies_ is a lightweight, secure, and robust cookie manager for modern JavaScript and TypeScript environments, featuring transparent chunking, cryptographic signing, encryption, and strict RFC 6265bis prefix validation.
+_@se-oss/cookies_ is a lightweight, secure, and robust cookie manager for modern JavaScript and TypeScript environments, featuring transparent chunking, cryptographic signing, encryption, and strict RFC 6265bis prefix validation.
 
 ---
 
