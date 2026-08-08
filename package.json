@@ -1,6 +1,6 @@
 {
   "name": "@se-oss/cookies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, secure cookie manager for JavaScript and TypeScript with signing, AES-GCM encryption, transparent chunking, and RFC 6265bis prefix validation.",
   "keywords": [
     "cookies",
